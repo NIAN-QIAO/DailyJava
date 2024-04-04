@@ -13,7 +13,7 @@ class TreeNode {
     }
 }
 
-class Solution {
+class Solution240403 {
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
         if (original == null || original == target) {
             return cloned;
@@ -28,14 +28,15 @@ class Solution {
 
 public class easy240403 {
     //    psvm,sout
+
     public static void main(String[] args) {
         TreeNode tree1Root = new TreeNode(7);
         tree1Root.left = new TreeNode(4);
         tree1Root.right = new TreeNode(3);
         tree1Root.right.left = new TreeNode(6);
         tree1Root.right.right = new TreeNode(19);
-        Solution a;
-        a =new Solution();
+        Solution240403 a;
+        a =new Solution240403();
         System.out.println(a.getTargetCopy(tree1Root, tree1Root, tree1Root.right).val);
     }
 }
